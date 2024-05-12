@@ -30,6 +30,11 @@ export const GlobalStyle = createGlobalStyle`
   ul {
     list-style: none;
   }
+
+  @font-face {
+    font-family: "NotoSans";
+    src: url("../fonts/NotoSans-VariableFont_wdth,wght.ttf");
+  }
 `
 
 

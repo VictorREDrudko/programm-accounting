@@ -58,9 +58,73 @@ const ItemList = styled.li`
     display: inline-block;
     margin-right: 10px;
   }
-
-
 `
+
+
+const CategoryTitle = styled.h3`
+  margin: 50px 0 0 0;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: ${Theme.font.fontTitle};
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: ${Theme.colors.mainBg};
+`
+
+
+// Карточки материальных средств
+const Cards = styled.div`
+  padding: 30px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+`
+
+const Card = styled.div`
+  background-color: ${Theme.colors.mainBg};
+  width: 200px;
+  height: 250px;
+  padding: 10px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: ${Theme.animation.transition};
+
+  & img {
+    width: 130px;
+  }
+
+  &:hover {
+    transform: scale(0.95);
+    background-color: ${Theme.colors.hoverBg}
+  }
+`
+
+const TitleCard = styled.h4`
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: ${Theme.font.fontTitle};
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: ${Theme.colors.font};
+`
+
+const SmallText = styled.span`
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: ${Theme.font.fontTitle};
+  font-size: 12px;
+  text-transform: uppercase;
+  color: ${Theme.colors.font};
+`
+
 
 export const S = {
   ClassificationSection,
@@ -68,4 +132,9 @@ export const S = {
   SmallTitle,
   List,
   ItemList,
+  CategoryTitle,
+  Cards,
+  Card,
+  TitleCard,
+  SmallText,
 }

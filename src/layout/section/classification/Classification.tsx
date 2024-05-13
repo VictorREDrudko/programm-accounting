@@ -97,27 +97,31 @@ export const Classification: React.FC = () => {
           <S.SmallTitle>органов пограничной службы</S.SmallTitle>
         </FlexWrapper>
 
-        <S.List>
+        <S.CategoryTitle>Раздел материальных средств</S.CategoryTitle>
+        <S.Cards>
+          {classificationThings.map(el => {
+            return (
+              <S.Card>
+                  <S.TitleCard>{el.title}</S.TitleCard>
+                  <Icon path={el.icon}/>
+                  <S.SmallText>Код номенклатуры: 00{el.id}</S.SmallText>
+              </S.Card>
+            )
+          })}
+        </S.Cards>
+
+
+        {/* <S.List>
           {classificationThings.map(el => {
             return (
               <S.ItemList>
                 <Icon path={el.icon}/>
                 <span>00{el.id}</span>
-                {el.title}
-                <ul>
-                  {el.category.map(item => {
-                    return (
-                      <li>
-                        <span>00{item.idCategory}</span>
-                        {item.nameCategory}
-                      </li>
-                    )
-                  })}
-                </ul>
+                <span>{el.title}</span>
               </S.ItemList>
             )
           })}
-        </S.List>
+        </S.List> */}
 
       </Container>
     </S.ClassificationSection>

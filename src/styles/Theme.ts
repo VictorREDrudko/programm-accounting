@@ -12,7 +12,10 @@ export const Theme = {
   },
 
   font: {
-    fontTitle: "NotoSans",
-    fontText: '"Noto Sans Mono", monospace',
+    fontTitle: '"Yanone Kaffeesatz", sans-serif',
+    fontText: '"Cousine", monospace',
+    fontTextCursive: '"Marck Script", cursive',
   }
+
+
 }

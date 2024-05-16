@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
-    font-family: "Noto Sans Mono", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: "Cousine", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -20,6 +20,7 @@ export const GlobalStyle = createGlobalStyle`
     color: ${Theme.colors.font};
     line-height: 1.2;
     min-width: 768px;
+    min-height: 100vh;
   }
 
   a {
@@ -32,8 +33,44 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   @font-face {
-    font-family: "NotoSans";
-    src: url("../fonts/NotoSans-VariableFont_wdth,wght.ttf");
+    font-family: "Cousine", monospace;
+    src: url("../fonts/Cousine-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "Cousine", monospace; 
+    src: url("../fonts/Cousine-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Cousine", monospace; 
+    src: url("../fonts/Cousine-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Cousine", monospace; 
+    src: url("../fonts/Cousine-BoldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Marck Script", cursive; 
+    src: url("../fonts/MarckScript-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Yanone Kaffeesatz", sans-serif; 
+    src: url("../fonts/YanoneKaffeesatz-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
   }
 `
 

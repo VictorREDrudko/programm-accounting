@@ -9,7 +9,7 @@ const Header = styled.header`
   left: 0;
   z-index: 999;
   padding: 10px 0;
-  font-family: "NotoSans";
+  /* font-family: "NotoSans"; */
 `
 
 const Logo = styled.img`
